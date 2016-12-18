@@ -12,7 +12,7 @@ high-performance, back pressured engine for reading pbf streams.
 Add the following dependency to `buid.sbt` (or whatever build system configuration): 
 
 ```
-libraryDependencies += "io.tripod" %% "osm-pbf-pipeline" % "0.0.1-SNAPSHOT"
+libraryDependencies += "io.tripod" %% "osm-pbf-pipeline" % "0.0.1"
 ```
 
 The see [examples](https://github.com/tripod-oss/osm-pbf-pipeline/tree/master/src/main/scala/io/tripod/pipeline/osm/pbf/examples) for use cases and to learn how to use osm-pbf-pipeline.
