@@ -9,4 +9,4 @@ See examples for use cases and to learn how to use osm-pbf-pipeline.
 
 ## Build status
 
-TODO: Add badge
+[![Build Status](https://travis-ci.org/tripod-oss/osm-pbf-pipeline.svg?branch=master)](https://travis-ci.org/tripod-oss/osm-pbf-pipeline)
