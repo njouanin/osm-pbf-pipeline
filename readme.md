@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tripod-oss/osm-pbf-pipeline.svg?branch=master)](https://travis-ci.org/tripod-oss/osm-pbf-pipeline)  [ ![Download](https://api.bintray.com/packages/tripod/maven/osm-pbf-pipeline/images/download.svg?version=0.0.1-SNAPSHOT) ](https://bintray.com/tripod/maven/osm-pbf-pipeline/0.0.1-SNAPSHOT/link) 
+[![Build Status](https://travis-ci.org/tripod-oss/osm-pbf-pipeline.svg?branch=master)](https://travis-ci.org/tripod-oss/osm-pbf-pipeline)  [ ![Download](https://api.bintray.com/packages/tripod/maven/osm-pbf-pipeline/images/download.svg?version=0.0.1) ](https://bintray.com/tripod/maven/osm-pbf-pipeline/0.0.1/link) 
  
 #osm-pbf-pipeline
 
