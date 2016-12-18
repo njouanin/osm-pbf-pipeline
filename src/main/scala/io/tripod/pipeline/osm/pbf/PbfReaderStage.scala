@@ -1,11 +1,3 @@
-/*
- *********************************************************************************
- * "THE BEER-WARE LICENSE" (Revision 42):
- * <nico@beerfactory.org> wrote this file.  As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy me a beer in return.   Nicolas JOUANIN
- *********************************************************************************
- */
 package io.tripod.pipeline.osm.pbf
 
 import java.beans.VetoableChangeListener
@@ -22,15 +14,13 @@ import io.tripod.pipeline.osm.pbf.model.FileBlock
 import scala.annotation.tailrec
 import scala.concurrent.{Future, Promise}
 
-class PbfReaderStage
-    extends GraphStageWithMaterializedValue[FlowShape[ByteString, FileBlock], Future[Long]] {
+class PbfReaderStage extends GraphStageWithMaterializedValue[FlowShape[ByteString, FileBlock], Future[Long]] {
   implicit val order = ByteOrder.BIG_ENDIAN
   val in             = Inlet[ByteString]("PbfReaderStage.in")
   val out            = Outlet[FileBlock]("PbfReaderStage.out")
   val shape          = FlowShape.of(in, out)
 
-  override def createLogicAndMaterializedValue(
-      attributes: Attributes): (GraphStageLogic, Future[Long]) = {
+  override def createLogicAndMaterializedValue(attributes: Attributes): (GraphStageLogic, Future[Long]) = {
     val promise = Promise[Long]
     val logic = new GraphStageLogic(shape) {
       private[this] var buffer: ByteString                    = ByteString.empty
@@ -78,10 +68,9 @@ class PbfReaderStage
       }
 
       @tailrec
-      private def computeBloc(
-          buffer: ByteString,
-          currentBlobHeader: Option[BlobHeader],
-          currentBlob: Option[Blob]): (ByteString, Option[BlobHeader], Option[Blob]) = {
+      private def computeBloc(buffer: ByteString,
+                              currentBlobHeader: Option[BlobHeader],
+                              currentBlob: Option[Blob]): (ByteString, Option[BlobHeader], Option[Blob]) = {
         (currentBlobHeader, currentBlob) match {
           case (None, None) ⇒
             if (buffer.length < 4)

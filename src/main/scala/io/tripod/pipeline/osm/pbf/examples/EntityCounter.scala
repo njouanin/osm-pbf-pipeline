@@ -1,19 +1,8 @@
-/*
- *********************************************************************************
- * "THE BEER-WARE LICENSE" (Revision 42):
- * <nico@beerfactory.org> wrote this file.  As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy me a beer in return.   Nicolas JOUANIN
- *********************************************************************************
- */
 package io.tripod.pipeline.osm.pbf.examples
-
-import java.nio.file.Paths
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model.{HttpRequest, HttpResponse}
-import akka.io.Tcp
 import akka.stream.{ActorMaterializer, FlowShape}
 import akka.stream.scaladsl.{Broadcast, FileIO, Flow, GraphDSL, Keep, Merge, Sink, Source}
 import io.tripod.pipeline.osm.pbf.PbfStreamFlow
