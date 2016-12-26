@@ -1,4 +1,4 @@
-organization := "org.tripod"
+organization := "io.tripod"
 name := "osm-pbf-pipeline"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 startYear := Some(2016)
