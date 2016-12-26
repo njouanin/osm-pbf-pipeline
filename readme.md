@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tripod-oss/osm-pbf-pipeline.svg?branch=master)](https://travis-ci.org/tripod-oss/osm-pbf-pipeline)  [ ![Download](https://api.bintray.com/packages/tripod/maven/osm-pbf-pipeline/images/download.svg?version=0.0.1) ](https://bintray.com/tripod/maven/osm-pbf-pipeline/0.0.1/link) 
+[![Build Status](https://travis-ci.org/tripod-oss/osm-pbf-pipeline.svg?branch=master)](https://travis-ci.org/tripod-oss/osm-pbf-pipeline)  [ ![Download](https://api.bintray.com/packages/tripod/maven/osm-pbf-pipeline/images/download.svg?version=0.0.2) ](https://bintray.com/tripod/maven/osm-pbf-pipeline/0.0.2/link) 
  
 #osm-pbf-pipeline
 
@@ -12,7 +12,7 @@ high-performance, back pressured engine for reading pbf streams.
 Add the following dependency to `buid.sbt` (or whatever build system configuration): 
 
 ```
-libraryDependencies += "io.tripod" %% "osm-pbf-pipeline" % "0.0.1"
+libraryDependencies += "io.tripod" %% "osm-pbf-pipeline" % "0.0.2"
 ```
 
 The see [examples](https://github.com/tripod-oss/osm-pbf-pipeline/tree/master/src/main/scala/io/tripod/pipeline/osm/pbf/examples) for use cases and to learn how to use osm-pbf-pipeline.
