@@ -12,7 +12,7 @@ case class EntityInfo(version: Option[Int],
                       user: Option[String],
                       visibility: Option[Boolean])
 
-trait OSMEntity {
+sealed trait OSMEntity {
   def tags: Map[String, String]
   def info: Option[EntityInfo]
 }
